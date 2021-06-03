@@ -16,17 +16,20 @@
     margin: 0 5px;
   }
 
-  li:last-of-type {
-    text-transform: uppercase;
-  }
-  
-  li:last-of-type:hover {
-    text-decoration: underline;
+  ul li:not(:last-child) { //yaaay!
+    a:hover {
+      background: $light-gray;
+    }
   }
 
-  a:hover {
-    background: rgb(196, 192, 192);
+  li:last-of-type {
+    text-transform: uppercase;
+
+    a:hover {
+      text-decoration: underline;
+    }
   }
+  
 }
 
 
