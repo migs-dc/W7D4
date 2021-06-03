@@ -1,0 +1,35 @@
+.sections-nav {
+	display: flex;
+	justify-content: center;
+  // flex-direction: row;
+	border-bottom: 1px solid lightgrey;
+	position: relative;
+  padding: 10px 0 10px 0;
+  
+
+  ul {
+    display: flex;
+    padding: 10px 5;
+  }
+
+  li {
+    margin: 0 5px;
+  }
+
+  li:last-of-type {
+    text-transform: uppercase;
+  }
+  
+  li:last-of-type:hover {
+    text-decoration: underline;
+  }
+
+  a:hover {
+    background: rgb(196, 192, 192);
+  }
+}
+
+
+
+
+

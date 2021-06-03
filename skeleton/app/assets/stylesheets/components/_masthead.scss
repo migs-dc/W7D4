@@ -4,10 +4,15 @@
 	align-items: center;
 	border-bottom: 2px solid black;
 	position: relative;
+
+	a:hover {
+		text-decoration: underline;
+	}
 }
 
 .language-nav {
 	position: absolute;
+	margin: 0 auto 0 auto;
 	top: -15px;
 	left: calc(50% - (177.78px/2));
 	background: white;
@@ -26,13 +31,20 @@
 
 	ul {
 		display: flex;
+
+		> li:first-of-type {
+      font-weight: bold;    
+    }
 	}
 }
 
 .logo {
 	max-width: 400px;
 	margin-top: 10px;
+	// font-family: ;
+	// font-size: 40px;
 }
+
 
 .masthead-links {
 	display: flex;
@@ -44,6 +56,10 @@
 	li {
 		margin-left: 10px;
 		border-right: 1px solid $light-gray;
+	}
+
+	> li:last-of-type {
+		border-right: 0px solid $light-gray;    
 	}
 
 	button {
@@ -71,4 +87,7 @@
 	strong {
 		color: green;
 	}
+
+
 }
+
